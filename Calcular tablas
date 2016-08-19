@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Capuccino {
+    
+     public static void main(String[] args) {
+        System.out.println("CALCULA LAS TABLAS DE MULTIPLICAR");
+        System.out.println("==================================");
+        System.out.println();
+        
+        System.out.println("Ingrese tabla minima");
+        System.out.println("==================================");
+        
+        Scanner sc = new Scanner(System.in);
+        int Min = sc.nextInt();
+        
+        System.out.println();
+        System.out.println("Ingrese tabla maxima");
+        System.out.println("==================================");
+        
+        int Max = sc.nextInt(); 
+        
+        System.out.println();
+        System.out.println("Desde el numero comienza el calculo");
+        System.out.println("==================================");
+        
+        int Vmin = sc.nextInt(); 
+        
+        System.out.println();
+        System.out.println("Hasta el numero deseas calcular");
+        System.out.println("==================================");
+        
+        int Vmax= sc.nextInt(); 
+             
+             
+        int factor, producto,numer;
+        
+        for (factor = Min; factor <= Max; factor = factor +1){
+            
+            
+            System.out.println();
+            System.out.println("Tabla del " + factor); 
+            System.out.println("==================");
+            
+            for (numer = Vmin; numer <=Vmax; numer = numer + 1){
+                
+              producto = numer*factor;
+            
+             
+              System.out.println(factor + " x " + numer +" = " + producto);  
+            }
+        }
+     }
+}
